@@ -7,5 +7,5 @@
      
      <context:component-scan base-package="com.nt.sbeans"/>
      <bean id="Idt" class="com.time.LocalDateTime" factory-method="now" scope="singleton"/>
-     <!-- <bean id="idt1" class="com.time.LocalDateTime" factory-method="now" scope="singleton"/> -->
+   <bean id="idt1" class="com.time.LocalDateTime" factory-method="now" scope="singleton"/>
 </beans>

@@ -17,11 +17,11 @@ public class WishMessageGenerator {
 	/*@Autowired
 	private Date date;*/
 	
-	/*
+
 	public WishMessageGenerator() {
 		System.out.println("WishMessageGenerator.WishMessageGenerator() 0- param constructor");
 	}
-	
+	/*
 	@Autowired
 	public WishMessageGenerator(LocalDateTime dateTime) {
 	     System.out.println("WishMessageGenerator.WishMessageGenerator()");

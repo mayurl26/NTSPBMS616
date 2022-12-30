@@ -5,8 +5,8 @@ import com.nt.comp.Engine;
 import com.nt.comp.PetrolEngine;
 import com.nt.comp.Vehicle;
 
-public class VehicleFactory {
-	public static Vehicle getInstance(String EngineType) {
+public class VehicleFactory  {
+	public static Vehicle getInstance(String EngineType) throws IllegalAccessException {
 		Engine engine=null;
 		
 		if(EngineType.equalsIgnoreCase("petrolEngine"))
