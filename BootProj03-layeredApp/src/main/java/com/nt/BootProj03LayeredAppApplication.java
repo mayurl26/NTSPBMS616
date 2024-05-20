@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContext;
 import com.nt.controller.PayrollOperationController;
 import com.nt.sbeans.Employee;
 
-@SpringBootApplication
+@SpringBootApplication 
 public class BootProj03LayeredAppApplication {
 
 	public static void main(String[] args) {

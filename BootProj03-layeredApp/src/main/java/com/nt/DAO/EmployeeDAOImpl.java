@@ -28,6 +28,7 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 				ps.setDouble(5, emp.getNetSalary());
 				
 			}
+			System.out.println(ds.getClass());
 			int count= ps.executeUpdate();
 			return count;
 			

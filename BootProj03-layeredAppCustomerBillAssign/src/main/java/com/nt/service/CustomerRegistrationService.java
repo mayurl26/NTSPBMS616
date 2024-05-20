@@ -3,12 +3,12 @@ package com.nt.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nt.DAO.CustomerRegisterDAO;
+import com.nt.DAO.OracleEmployeeDAO;
 import com.nt.sbeans.Customer;
 @Service("CustService")
 public class CustomerRegistrationService implements ICustomerService {
 	@Autowired
-	private CustomerRegisterDAO  cdao;
+	private OracleEmployeeDAO  cdao;
 	private final int gst=18;
 	
 	@Override

@@ -7,12 +7,14 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 import com.nt.sbeans.Customer;
 
 @Repository("CustDAO")
-public class CustomerRegisterDAO implements ICustomerRagistration {
+
+public class OracleEmployeeDAO implements ICustomerRagistration {
 	int count=0;
 	private static final String Customer_Insert_Query="INSERT INTO CUSTOMER_INFO VALUES(CUST_NO_SEQ.NEXTVAL, ?,?,?,?,?)";
 	
@@ -32,6 +34,7 @@ public class CustomerRegisterDAO implements ICustomerRagistration {
 			}
 			
 			count=ps.executeUpdate();
+			System.out.println("Injected datascourse class name :: "+ds.getClass());
 			
 			
 		}catch(SQLException se) {
